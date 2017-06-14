@@ -15,8 +15,8 @@ public class Node<T extends Comparable<T>> {
     }
     public Node(Node<T> node) {
         this.right = node.right;
-        this.left = null;
+        this.left = node.left;
         this.value = node.value;
-        height--;
+        height = 0;
     }
 }
